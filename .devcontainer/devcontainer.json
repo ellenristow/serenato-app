@@ -1,0 +1,9 @@
+{
+	"name": "PHP + MariaDB + phpMyAdmin",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "web",
+	"workspaceFolder": "/var/www/html",
+	"forwardPorts": [8080, 8081, 3306],
+	"postCreateCommand": "echo 'Container do projeto Serenato pronto!'",
+	"remoteUser": "root"
+}
