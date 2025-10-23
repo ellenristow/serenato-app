@@ -30,6 +30,11 @@ class Produto
         return $this->id;
     }
 
+    public function setImage(string $imagem): void
+    {
+        $this->imagem = $imagem;
+    }
+
     public function getTipo(): string
     {
         return $this->tipo;
