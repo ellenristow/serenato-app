@@ -30,7 +30,7 @@ class Produto
         return $this->id;
     }
 
-    public function setImage(string $imagem): void
+    public function setImagem(string $imagem): void
     {
         $this->imagem = $imagem;
     }
@@ -55,7 +55,7 @@ class Produto
         return $this->imagem;
     }
 
-    public function getImageDiretorio(): string
+    public function getImagemDiretorio(): string
     {
         return "img/" . $this->imagem;
     }

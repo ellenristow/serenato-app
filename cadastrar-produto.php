@@ -14,9 +14,10 @@ if( isset($_POST['cadastro']) ){
         $_POST['preco']
     );
 
-    $_FILES['imagem']['tmp_name'];
-
-    move_uploaded_file($_FILES['imagem']['tmp_name'])
+    if ( isset($_FILES['imagem']) ){
+        $produto->setImagem(uniqid() . $_FILES['imagem']['name']);
+        move_uploaded_file($_FILES['imagem']['tmp_name'], $produto->getImagemDiretorio());
+    }
 
     $produtoRepositorio = new ProdutoRepositorio($pdo);
     $produtoRepositorio->save($produto);
