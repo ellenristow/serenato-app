@@ -1,5 +1,5 @@
 {
-	"name": "PHP + MariaDB + phpMyAdmin",
+	"name": "serenato-app",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "web",
 	"workspaceFolder": "/var/www/html",

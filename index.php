@@ -43,7 +43,7 @@
                 <?php foreach ($dadosCafe as $cafe): ?>
                 <div class="container-produto">
                     <div class="container-foto">
-                        <img src="<?= $cafe->getImageDiretorio() ?>">
+                        <img src="<?= $cafe->getImagemDiretorio() ?>">
                     </div>
                     <p><?= $cafe->getNome()?></p>
                     <p><?= $cafe->getDescricao() ?></p>
@@ -61,7 +61,7 @@
                 <?php foreach ($dadosAlmoco as $almoco): ?>
                 <div class="container-produto">
                     <div class="container-foto">
-                        <img src="<?= $almoco->getImageDiretorio() ?>">
+                        <img src="<?= $almoco->getImagemDiretorio() ?>">
                     </div>
                     <p><?= $almoco->getNome() ?></p>
                     <p><?= $almoco->getDescricao() ?></p>
